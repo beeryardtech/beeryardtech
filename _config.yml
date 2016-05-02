@@ -1,21 +1,21 @@
 ##
 # General
 ##
-name: Minimal-Block
-description: "Minimalistic, friendly, responsive."
+name: Beeryard Technology
+description: "Simple Solutions for Complex Problems."
 baseurl:
 url: "http://beeryardtech.github.io"
 
 markdown: kramdown
 highlighter: rouge
 
-paginate: 5
+paginate: 10
 permalink: /:title
 
 ##
 # Social share and comments.
 ##
-disqus-id: beeryardtech
+#disqus-id: beeryardtech
 twitter: beeryardtech
 github: beeryardtech
 google: +beeryardtech
@@ -23,3 +23,8 @@ google: +beeryardtech
 # RSS feed
 rss-feed-limit: 10
 rss-show-full: "no"
+
+##
+# Dependencies
+##
+gems: [ "jekyll-paginate" ]
