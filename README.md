@@ -1,13 +1,9 @@
 
 Credits
 ----------------
-[Live Demo](http://drvy.github.io/minimal-block/)
-
-[Download](https://github.com/drvy/minimal-block/archive/master.zip)
-
 [Github Repository](https://github.com/drvy/minimal-block)
 
-![minimal-block preview](https://raw.githubusercontent.com/drvy/minimal-block/master/preview.png)
+[Resume Base Styles](https://jekyll-resume.philipithomas.com/)
 
 License
 ----------------

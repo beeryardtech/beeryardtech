@@ -1,15 +1,26 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
 /*******************************************************************************
  * vim: tabstop=4:shiftwidth=4:expandtab
+ * Copyright (c) 2016 Beeryard Technology Corp.  All rights reserved.
  *******************************************************************************/
-@import "color";
-@import "base";
-@import "syntax";
-
 /* ------------------------------------------------------------------------
--   Content Pages
+-  Main background colors. -
 -------------------------------------------------------------------------*/
-@import "resume";
+.color-1 {
+    background: #2c3e50;
+}
+
+/* Title background */
+.color-2 {
+    background: #34495e;
+}
+
+/* Description background */
+.color-3 {
+    background: #f2f2f2;
+}
+
+/* Modules background */
+.color-4 {
+    background: #7f8c8d;
+}
 

@@ -1,7 +1,7 @@
 /*******************************************************************************
  * vim: tabstop=4:shiftwidth=4:expandtab
+ * Copyright (c) 2016 Beeryard Technology Corp.  All rights reserved.
  *******************************************************************************/
-
 /* ------------------------------------------------------------------------
 -   Make browsers more friendly with padding and margin. -
 -------------------------------------------------------------------------*/
@@ -12,35 +12,9 @@
     box-sizing: border-box;
 }
 /* ------------------------------------------------------------------------
--  Main background colors. -
--------------------------------------------------------------------------*/
-
-.color-1 {
-    background: #2c3e50;
-}
-/* Title background */
-
-.color-2 {
-    background: #34495e;
-}
-/* Description background */
-
-.color-3 {
-    background: #f2f2f2;
-}
-/* Modules background */
-
-.color-4 {
-    background: #7f8c8d;
-}
-/* Main menu background */
-
-/* ------------------------------------------------------------------------
 -  The basics. -
 -------------------------------------------------------------------------*/
-
-html,
-body {
+html, body {
     background: #d1d1d1;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
@@ -145,8 +119,10 @@ article p a:active {
     top: 0.75em;
 }
 hr {
+	box-sizing: content-box;
+	height: 0;
+    background: #cccccc;
     border: 0;
-    background: #ccc;
     height: 1px;
     margin: 50px 0;
 }

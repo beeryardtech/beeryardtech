@@ -1,3 +1,122 @@
 /*******************************************************************************
  * vim: tabstop=4:shiftwidth=4:expandtab
+ * Copyright (c) 2016 Beeryard Technology Corp.  All rights reserved.
  *******************************************************************************/
+.block ul {
+	padding-top: 10px;
+	clear: both;
+}
+.base, p, ul, ol {
+	font-size: 19px;
+}
+ul, ol {
+	/*list-style: none;*/
+	margin: 0;
+}
+
+ul li {
+	position: relative;
+	padding-left: 16px;
+}
+
+ul li:before {
+	font-family:"icons";
+	font-size:13px;
+	display:block;
+	font-weight:400;
+	position:absolute;
+	top:0;
+	left:0;
+	line-height:26px
+}
+
+.icon-bullet:before,ul li:before,ul.list-links a:before,.list-anchor a:before {
+	/*content:"\e002"*/
+}
+h1, h2, h3, h4, h5, p {
+	margin: 0;
+}
+
+li > p {
+	padding-top: 0;
+}
+.base, p, ul, ol {
+	font-size: 19px;
+}
+
+.base, p, ul, ol {
+	font-size: 16px;
+	line-height: 1.6250em;
+	padding-top: 1.6250em;
+	padding-bottom: 0;
+}
+
+hr {
+    margin: 0 0;
+}
+
+h2 {
+	font-family: "Roboto Condensed",Helvetica,sans-serif;
+	font-size: 42px;
+	font-weight: 300;
+	line-height: 1.2381em;
+	padding-top: .6190em;
+	padding-bottom: 0;
+}
+
+.block {
+	padding: 30px 0;
+}
+.block .main-row, .block .sub-row {
+	display: block;
+	clear: both;
+	width: 100%;
+}
+
+.block .main-row .role, .block .main-row .org, .block .sub-row .role, .block .sub-row .org {
+	float: left;
+	text-align: left;
+	width: 50%;
+}
+
+.block .main-row h1, .block .main-row h2, .block .main-row h3, .block .main-row h4, .block .main-row h5, .block .main-row h6, .block .sub-row h1, .block .sub-row h2, .block .sub-row h3, .block .sub-row h4, .block .sub-row h5, .block .sub-row h6 {
+	padding: 6px 0 0 0;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.3000em;
+	padding-top: 1.3000em;
+	padding-bottom: 0;
+}
+
+
+.large, h3 {
+	font-family: "Roboto Condensed",Helvetica,sans-serif;
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 1.0000em;
+	padding-top: 1.0000em;
+	padding-bottom: 0;
+}
+
+.block .main-row .location, .block .main-row .when, .block .sub-row .location, .block .sub-row .when {
+	text-align: right;
+	float: right;
+	width: 50%;
+}
+
+.block .main-row .role, .block .main-row .org, .block .sub-row .role, .block .sub-row .org {
+	float: left;
+	text-align: left;
+	width: 50%;
+}
+
+.medium, h4 {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.3000em;
+	padding-top: 1.3000em;
+	padding-bottom: 0;
+}
