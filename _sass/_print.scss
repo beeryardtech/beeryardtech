@@ -1,0 +1,80 @@
+/*******************************************************************************
+ * vim: tabstop=4:shiftwidth=4:expandtab
+ * Copyright (c) 2016 Beeryard Technology Corp.  All rights reserved.
+ *******************************************************************************/
+$HEAD_PRINT_OFFSET: 0.80;
+
+@page
+{
+    /* this affects the margin in the printer settings */
+    margin: 0mm 0mm 0mm 0mm;
+    /*size: 8.5in 11in;*/
+    size: auto;
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    img[src]:after {
+        content: none !important;
+    }
+}
+
+@media print {
+    body * {
+        /* this affects the margin on the content before sending to printer */
+        orphans: 3;
+        margin: 0px;
+        visibility: hidden;
+    }
+
+    .block ul {
+        padding-left: 10px;
+    }
+
+    #print_resume, #print_resume * {
+        visibility: visible;
+    }
+
+    #print_resume {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    /*
+     * SINGLE PAGE RESUME
+     * Use these classes to select rather to show something in
+     * the one page version of the resume.
+     */
+    .print_resume_single {
+        visibility: visible;
+    }
+
+    .print_resume_not_single {
+        visibility: hidden;
+    }
+
+    %print_header {
+        padding-bottom: 2px;
+    }
+
+    h2 {
+        @extend %print_header;
+        font-size: $H2_FONT_SIZE * $HEAD_PRINT_OFFSET;
+    }
+
+    h3 {
+        @extend %print_header;
+        font-size: $H3_FONT_SIZE * $HEAD_PRINT_OFFSET;
+    }
+
+    h4 {
+        @extend %print_header;
+        font-size: $H4_FONT_SIZE * $HEAD_PRINT_OFFSET;
+    }
+
+    .base, p, ul, ol {
+        font-size: $TEXT_FONT_SIZE * $HEAD_PRINT_OFFSET;
+    }
+}

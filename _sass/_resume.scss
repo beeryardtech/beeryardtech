@@ -2,13 +2,36 @@
  * vim: tabstop=4:shiftwidth=4:expandtab
  * Copyright (c) 2016 Beeryard Technology Corp.  All rights reserved.
  *******************************************************************************/
-.block ul {
-	padding-top: 10px;
-	clear: both;
+//////
+// Variables
+/////
+$H1_FONT_SIZE: 30px;
+$H2_FONT_SIZE: 22px;
+$H3_FONT_SIZE: 18px;
+$H4_FONT_SIZE: 16px;
+
+$TEXT_FONT_SIZE: 14px;
+
+/////
+// Classes
+/////
+.name {
+    text-align: center;
 }
+
+.block {
+	padding: 20px 0;
+}
+
+.block ul {
+	clear: both;
+	padding-top: 5px;
+}
+
 .base, p, ul, ol {
 	font-size: 19px;
 }
+
 ul, ol {
 	/*list-style: none;*/
 	margin: 0;
@@ -16,7 +39,7 @@ ul, ol {
 
 ul li {
 	position: relative;
-	padding-left: 16px;
+	padding-left: 10px;
 }
 
 ul li:before {
@@ -33,19 +56,9 @@ ul li:before {
 .icon-bullet:before,ul li:before,ul.list-links a:before,.list-anchor a:before {
 	/*content:"\e002"*/
 }
-h1, h2, h3, h4, h5, p {
-	margin: 0;
-}
-
-li > p {
-	padding-top: 0;
-}
-.base, p, ul, ol {
-	font-size: 19px;
-}
 
 .base, p, ul, ol {
-	font-size: 16px;
+	font-size: $TEXT_FONT_SIZE;
 	line-height: 1.6250em;
 	padding-top: 1.6250em;
 	padding-bottom: 0;
@@ -55,18 +68,6 @@ hr {
     margin: 0 0;
 }
 
-h2 {
-	font-family: "Roboto Condensed",Helvetica,sans-serif;
-	font-size: 42px;
-	font-weight: 300;
-	line-height: 1.2381em;
-	padding-top: .6190em;
-	padding-bottom: 0;
-}
-
-.block {
-	padding: 30px 0;
-}
 .block .main-row, .block .sub-row {
 	display: block;
 	clear: both;
@@ -83,24 +84,6 @@ h2 {
 	padding: 6px 0 0 0;
 }
 
-h3 {
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 1.3000em;
-	padding-top: 1.3000em;
-	padding-bottom: 0;
-}
-
-
-.large, h3 {
-	font-family: "Roboto Condensed",Helvetica,sans-serif;
-	font-size: 26px;
-	font-weight: 300;
-	line-height: 1.0000em;
-	padding-top: 1.0000em;
-	padding-bottom: 0;
-}
-
 .block .main-row .location, .block .main-row .when, .block .sub-row .location, .block .sub-row .when {
 	text-align: right;
 	float: right;
@@ -113,10 +96,39 @@ h3 {
 	width: 50%;
 }
 
-.medium, h4 {
-	font-size: 20px;
+/*
+* Header elements
+*/
+
+
+%resume_header {
+	margin: 0;
+	font-family: "Roboto Condensed",Helvetica,sans-serif;
 	font-weight: 300;
-	line-height: 1.3000em;
-	padding-top: 1.3000em;
 	padding-bottom: 0;
+}
+
+h1 {
+    @extend %resume_header;
+}
+
+h2 {
+    @extend %resume_header;
+	font-size: $H2_FONT_SIZE;
+	line-height: 1.2em;
+	padding-top: 0.6190em;
+}
+
+h3 {
+    @extend %resume_header;
+	font-size: $H3_FONT_SIZE;
+	line-height: 1.0em;
+	padding-top: 1.0em;
+}
+
+h4 {
+    @extend %resume_header;
+	font-size: $H4_FONT_SIZE;
+	line-height: 1.2em;
+	padding-top: 1.2em;
 }
