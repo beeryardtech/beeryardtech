@@ -1,0 +1,27 @@
+- project: DBDiff
+  image:
+      type: image
+      class: image1
+  position: left
+  text: Get the differences between revisions of files in dropbox!
+
+- project: DBDiff
+  image:
+      type: image
+      class: image1
+  position: left
+  text: Get the differences between revisions of files in dropbox!
+
+- project: DBDiff
+  image:
+      type: image
+      class: image1
+  position: left
+  text: Get the differences between revisions of files in dropbox!
+
+- project: DBDiff
+  image:
+      type: image
+      class: image1
+  position: right
+  text: Get the differences between revisions of files in dropbox!

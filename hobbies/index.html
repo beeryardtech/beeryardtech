@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="main-content">
+    <article class="module color-3">
+            <h1>Projects</h1>
+            <hr>
+            <div class="content">
+                <div class="{% cycle 'left_column' 'right_column' %}">
+                    {% for project in site.data.projects %}
+                    <div class="card">
+                        {% if project.project %}
+                            <h1>{{ project.project }}</h1>
+                        {% endif %}
+
+                        {% if project.image %}
+                            {% if project.image.type == 'image' %}
+                            <div class="card-image {{ project.image.class }}"></div>
+
+                            {% elsif project.image.type == 'banner' %}
+                            <div class="card-image {{ project.image.class }}">
+                                <div class="banner"></div>
+                                <h2>{{ project.image.text }}</h2>
+                            </div>
+                            {% endif %}
+                        {% endif %}
+
+                        {% if project.text %}
+                            <p>{{ project.text }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </article>
+</div>
