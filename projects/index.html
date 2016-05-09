@@ -5,6 +5,22 @@ layout: default
     <article class="module color-3">
             <h1>Projects</h1>
             <hr>
-            <p>Current project info.</p>
+            <div class="content">
+                <div class="left_column">
+                    {% for project in site.data.projects %}
+                        {% if project.position == 'left' %}
+                            {% include project_cards.html %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="left_column">
+                    {% for project in site.data.projects %}
+                        {% if project.position == 'right' %}
+                            {% include project_cards.html %}
+                        {% endif %}
+
+                    {% endfor %}
+                </div>
+            </div>
     </article>
 </div>
