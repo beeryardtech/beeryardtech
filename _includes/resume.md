@@ -1,2 +1,0 @@
-# Travis Goldie
-## Work History

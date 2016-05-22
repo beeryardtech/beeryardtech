@@ -1,0 +1,14 @@
+<h2 id="{{ sec.id }}">{{ sec.display }}</h2>
+<hr />
+<div class="block">
+    <div class="main-row">
+        <div class="org">
+        </div>
+    </div>
+    <ul>
+        {% for item in sec.items %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
