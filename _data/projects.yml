@@ -1,25 +1,34 @@
-- project: DBDiff
+################################################################################
+# vim: tabstop=4:shiftwidth=4:expandtab
+# Copyright (c) 2016 Beeryard Technology.  All rights reserved.
+################################################################################
+
+###
+# Left Side Content
+###
+- name: DBDiff
+  image:
+      type: image
+      class: image1
+  position: left
+  text: Python and vimscript plugin to view the differences between files.
+      Provides a local menu to view revisions.
+
+- name: DBDiff
   image:
       type: image
       class: image1
   position: left
   text: Get the differences between revisions of files in dropbox!
 
-- project: DBDiff
-  image:
-      type: image
-      class: image1
+- name: Dots
   position: left
   text: Get the differences between revisions of files in dropbox!
 
-- project: DBDiff
-  image:
-      type: image
-      class: image1
-  position: left
-  text: Get the differences between revisions of files in dropbox!
-
-- project: DBDiff
+###
+# Right Side Content
+###
+- name: DBDiff
   image:
       type: image
       class: image1

@@ -3,161 +3,108 @@ layout: default
 ---
 <div id="print_resume" class="main-content">
     <article class="module color-3">
-        <h1 id="name" class="name">TRAVIS GOLDIE</h2>
+        {% assign sec = site.data.resume.header %}
+        <h1 id="{{ sec.id }}" class="name">{{ sec.name }}</h2>
         <div class="block">
             <div class="main-row">
                 <div class="org">
-                    <h3>Email: <a class="email" href="mailto:tgoldie+resume@gmail.com">tgoldie@gmail.com</a></h3>
+                    <h3>Email: <a class="email" href="{{ sec.mailto }}">{{ sec.email }}</a></h3>
                 </div>
                 <div class="when">
-                    <h3>Mobile: (803) 269-8690</h3>
+                    <h3>{{ sec.phone }}</h3>
                 </div>
             </div>
         </div>
-        <ul></ul>
-        <h2 id="professional">Work Experience</h2>
+
+        {% assign sec = site.data.resume.work %}
+        <h2 id="{{ sec.id }}">{{ sec.display }}</h2>
         <hr />
+        {% for item in sec.items -%}
         <div class="block">
             <div class="main-row">
                 <div class="org">
-                    <h3>SIOS Technology Corp</h3>
+                    <h3>{{ item.org }}</h3>
                 </div>
                 <div class="when">
-                    <h3>Jan 2012 - Now</h3>
+                    <h3>{{ item.when }}</h3>
                 </div>
             </div>
             <div class="sub-row">
                 <div class="role">
-                    <h4>UI Engineer</h4>
+                    <h4>{{ item.role }}</h4>
                 </div>
                 <div class="location">
-                    <h4>Lexington, SC</h4>
+                    <h4>{{ item.location }}</h4>
                 </div>
             </div>
             <ul>
-                <li>Defined and built the User Interface's architecture for the SIOS iQ.</li>
-                <li>Paired with UX developer to design features, manage scope, and help find potential issues as early as possible in process.</li>
-                <li>Led the technical requirements and the task management efforts for the offshore team (5-7 members) in India.</li>
-                <li>Worked, trained, and mentored the offshore team to increase their productivity, technical skills, and ability to meet sprint commitments.</li>
-                <li>Facilitated team's SCRUM Master in completing Agile ceremonies, tasks, and communication of work done and in progress to rest of team.</li>
-                <li>Charged with interviewing potential job prospects based on strict criteria of technical skills, ability to fit culture, and on understanding Agile processes.</li>
-                <li>Created topology graph prototype (using d3.js) that was well received during demos at VMWare's VMWorld 2015. </li>
-                <li>Helped support team implement cheaper and faster process to get customer logs, reducing monthly costs by 75%, and saving many hours of having to manually delete files.</li>
+                {% for duty in item.duties %}
+                <li>{{ duty }}</li>
+                {% endfor %}
             </ul>
         </div>
+        {% endfor %}
 
-        <div class="block">
-            <div class="main-row">
-                <div class="org">
-                    <h3>Accenture Software (Duck Creek Tech)</h3>
-                </div>
-                <div class="when">
-                    <h3>Jun 2010 - Dec 2011</h3>
-                </div>
-            </div>
-            <div class="sub-row">
-                <div class="role">
-                    <h4>Implementation Specialist 2</h4>
-                </div>
-                <div class="location">
-                    <h4>Columbia, SC</h4>
-                </div>
-            </div>
-            <ul>
-                <li>Developed the code, managed the resources, and implemented the legacy conversion project for commercial property </li>
-                <li>Created customized insurance software using the XML and C# based EXAMPLE platform</li>
-                <li>Interacted with customers to complete requirements and resolve defects</li>
-            </ul>
-        </div>
-
-        <div class="block">
-            <div class="main-row">
-                <div class="org">
-                    <h3>Tucker Oil Company, LLC</h3>
-                </div>
-                <div class="when">
-                    <h3>Apr 2008 – Oct 2009</h3>
-                </div>
-            </div>
-            <div class="sub-row">
-                <div class="role">
-                    <h4>Web Developer</h4>
-                </div>
-                <div class="location">
-                    <h4>Columbia, SC</h4>
-                </div>
-            </div>
-            <ul>
-                <li>Managed and designed web site using Adobe Dreamweaver</li>
-                <li>Optimized photography using Adobe Photoshop Extended</li>
-                <li>Coded interactive applications using PHP and Javascript</li>
-                <li>Structured MySQL database for data storage and security</li>
-            </ul>
-        </div>
-
-        <h2 id="education">Eduction</h2>
+        {% assign sec = site.data.resume.education %}
+        <h2 id="{{ sec.id }}">{{ sec.display }}</h2>
         <hr />
+        {% for item in sec.items %}
         <div class="block">
             <div class="main-row">
                 <div class="org">
-                    <h3>University of South Carolina</h3>
+                    <h3>{{ item.org }}</h3>
                 </div>
                 <div class="when">
-                    <h3>Aug 2006 - May 2010</h3>
+                    <h3>{{ item.when }}</h3>
                 </div>
             </div>
             <div class="sub-row">
                 <div class="role">
-                    <h4>B.S. in Mathematics with Distinction</h4>
+                    <h4>{{ item.role }}</h4>
                 </div>
                 <div class="location">
-                    <h4>Columbia, SC</h4>
+                    <h4>{{ item.location }}</h4>
                 </div>
             </div>
             <ul>
-                <li>Major in Mathematics and Minor in Computer Science</li>
-                <li>GPA: 3.381</li>
+                {% for duty in item.duties %}
+                <li>{{ duty }}</li>
+                {% endfor %}
             </ul>
         </div>
+        {% endfor %}
 
-        <div class="block">
-            <div class="main-row">
-                <div class="org">
-                    <h3>Undergraduate Research</h3>
+        <div class="keywords">
+            {% assign sec = site.data.resume.skills %}
+            <h2 id="{{ sec.id }}">{{ sec.display }}</h2>
+            <hr />
+            <div class="block">
+                <div class="main-row">
+                    <div class="org">
+                    </div>
                 </div>
-                <div class="when">
-                    <h3>Aug 2009 - Apr 2010</h3>
-                </div>
+                <ul>
+                    {% for item in sec.items %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
             </div>
-            <div class="sub-row">
-                <div class="role">
-                    <h4><i>The Art of Perspective: A Multi-Disciplinary View</i></h4>
-                </div>
-                <div class="location">
-                    <h4><span class="bold">Mentor:</span> Dr. Colin Bennett, Prof. of Mathematics</h4>
-                </div>
-            </div>
-            <ul>
-                <li>A description of perspective geometry within other branches of mathematics including linear algebra, algebraic structures, topology, and non-Euclidean geometry.</li>
-            </ul>
-        </div>
 
-        <h2 id="education">Skills</h2>
-        <hr />
-        <div class="block">
-            <div class="main-row">
-                <div class="org">
-                    <h3>Technical</h3>
+            {% assign sec = site.data.resume.techs %}
+            <h2 id="{{ sec.id }}">{{ sec.display }}</h2>
+            <hr />
+            <div class="block">
+                <div class="main-row">
+                    <div class="org">
+                    </div>
                 </div>
+                <ul>
+                    {% for item in sec.items %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
             </div>
-            <ul>
-                <li>Worked extensively with Microsoft Windows and Microsoft Office</li>
-                <li>Working knowledge of JAVA, C++, C#, and UNIX/Linux based systems</li>
-                <li>Strong familiarity of CSS 2, XHTML, XML, and XSLT standards</li>
-                <li>Composed technical documents using the LATEX typesetting language</li>
-            </ul>
         </div>
 
     </article>
 </div>
-

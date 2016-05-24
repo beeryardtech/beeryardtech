@@ -1,0 +1,24 @@
+<div class="block">
+    <div class="main-row">
+        <div class="org">
+            <h3>{{ item.org }}</h3>
+        </div>
+        <div class="when">
+            <h3>{{ item.when }}</h3>
+        </div>
+    </div>
+    <div class="sub-row">
+        <div class="role">
+            <h4>{{ item.role }}</h4>
+        </div>
+        <div class="location">
+            <h4>{{ item.location }}</h4>
+        </div>
+    </div>
+    <ul>
+        {% for duty in item.duties %}
+        <li>{{ duty }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
