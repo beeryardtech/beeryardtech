@@ -1,0 +1,103 @@
+################################################################################
+# vim: tabstop=4:shiftwidth=4:expandtab
+# Copyright (c) 2016 Beeryard Technology.  All rights reserved.
+################################################################################
+
+###
+# Header Section
+###
+header:
+    display: header
+    id: name
+    name: "TRAVIS GOLDIE"
+    email: "travis@beeryardtech.com"
+    mailto: "mailto:tgoldie+resume@gmail.com"
+    phone: "Mobile: (803) 269-8690"
+
+
+
+work:
+    display: Work History
+    id: work
+    items:
+        - org: "SIOS Technology Corp"
+          when: "Jan 2012 - Now"
+          role: "UI Engineer"
+          location: "Lexington, SC"
+          duties:
+              - "Defined and built the User Interface's architecture for the SIOS iQ."
+              - "Paired with UX developer to design features, manage scope, and help find potential issues as early as possible in process."
+              - "Led the technical requirements and the task management efforts for the offshore team (5-7 members) in India."
+              - "Worked, trained, and mentored the offshore team to increase their productivity, technical skills, and ability to meet sprint commitments."
+              - "Facilitated team's SCRUM Master in completing Agile ceremonies, tasks, and communication of work done and in progress to rest of team."
+              - "Charged with interviewing potential job prospects based on strict criteria of technical skills, ability to fit culture, and on understanding Agile processes."
+              - "Created topology graph prototype (using d3.js) that was well received during demos at VMWare's VMWorld 2015. "
+              - "Helped support team implement cheaper and faster process to get customer logs, reducing monthly costs by 75%, and saving many hours of having to manually delete files."
+
+
+        - org: "Accenture Software (Duck Creek Tech)"
+          when: "Jun 2010 - Dec 2011"
+          role: "Implementation Specialist 2"
+          location: "Columbia, SC"
+          duties:
+              - "Technical lead during the conversion project, completing it 2 weeks early"
+              - "Developed and implemented the legacy conversion project for commercial property "
+              - "Created customized insurance software using the XML and C# based EXAMPLE platform"
+              - "Interacted with customers to complete requirements and resolve defects"
+
+
+        - org: "Tucker Oil Company, LLC."
+          when: "Apr 2008 – Oct 2009"
+          role: "Website Developer"
+          location: "Columbia, SC"
+          duties:
+              - "Managed and designed web site using Adobe Dreamweaver"
+              - "Optimized photography using Adobe Photoshop Extended"
+              - "Coded interactive applications using PHP and JavaScript"
+              - "Structured MySQL database for data storage and security"
+
+
+
+education:
+    display: Education
+    id: education
+    items:
+        - org: "University of South Carolina"
+          when: "Aug 2006 – May 2010"
+          role: "B.S. in Mathematics with Distinction"
+          location: "Columbia, SC"
+          duties:
+              - "Major in Mathematics and Minor in Computer Science"
+              - "GPA: 3.381"
+
+        - org: "Undergraduate Research"
+          when: "Aug 2009 – Apr 2010"
+          role: "<i>The Art of Perspective: A Multi-Disciplinary View</i>"
+          location: "<b>Mentor:</b> Dr. Colin Bennett, Prof. of Mathematics"
+          duties:
+              - "A description of perspective geometry within other branches of mathematics including linear algebra, algebraic structures, topology, and non-Euclidean geometry."
+
+
+skills:
+    display: Skills
+    id: skills
+    items:
+        - "UI and Web Application Architecture and Development."
+        - "Data visualization and data representation."
+        - "Functional programming design patterns and concepts."
+        - "Technical design specifications documentation."
+        - "Technical training and leadership."
+        - "Create build environments"
+
+
+techs:
+    display: Technologies
+    id: technologies
+    items:
+        - "UI Development: JavaScript, HTML, SCSS, jQuery, Lodash"
+        - "Frameworks: Angular.js"
+        - "Visualization: Highcharts.js and d3.js"
+        - "Build tools: Grunt, Maven, Jenkins"
+        - "System Administration: Linux, Ubuntu, and Redhat"
+        - "Scripting: BASH and Python"
+        - "Static site builder: Jekyll and Ruby"
