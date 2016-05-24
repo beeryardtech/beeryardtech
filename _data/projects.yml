@@ -2,6 +2,11 @@
 # vim: tabstop=4:shiftwidth=4:expandtab
 # Copyright (c) 2016 Beeryard Technology.  All rights reserved.
 ################################################################################
+##
+# Image Types:
+#   - image
+#   - banner
+##
 
 ###
 # Left Side Content
@@ -14,23 +19,21 @@
   text: Python and vimscript plugin to view the differences between files.
       Provides a local menu to view revisions.
 
-- name: DBDiff
-  image:
-      type: image
-      class: image1
+- name: tmux-net-speed
   position: left
-  text: Get the differences between revisions of files in dropbox!
+  text: Simple TMUX plugin to calculate the average network usage
 
-- name: Dots
-  position: left
-  text: Get the differences between revisions of files in dropbox!
 
 ###
 # Right Side Content
 ###
-- name: DBDiff
+- name: Scripts
   image:
       type: image
       class: image1
   position: right
-  text: Get the differences between revisions of files in dropbox!
+  text: Big pile of code. Bash, python, and a few others when randomness gets me.
+
+- name: Dots
+  position: left
+  text: Your average list of Linux config files, backuped and ready to share!

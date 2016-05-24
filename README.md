@@ -1,3 +1,7 @@
+Welcome
+----------------
+Hello everyone that finds this! Checkout the main attraction, the resume! (of course!).
+
 
 Credits
 ----------------
