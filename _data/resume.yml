@@ -14,25 +14,22 @@ header:
     mailto: "mailto:tgoldie+resume@gmail.com"
     phone: "Mobile: (803) 269-8690"
 
-
-
 work:
     display: Work History
     id: work
     items:
         - org: "SIOS Technology Corp"
           when: "Jan 2012 - Now"
-          role: "UI Engineer"
+          role: "Sr. Software Engineer, UI"
           location: "Lexington, SC"
           duties:
+              - "Implemented several advanced and unique visualization the key marketable features"
               - "Defined and built the User Interface's architecture for the SIOS iQ."
               - "Paired with UX developer to design features, manage scope, and help find potential issues as early as possible in process."
               - "Led the technical requirements and the task management efforts for the offshore team (5-7 members) in India."
               - "Worked, trained, and mentored the offshore team to increase their productivity, technical skills, and ability to meet sprint commitments."
               - "Facilitated team's SCRUM Master in completing Agile ceremonies, tasks, and communication of work done and in progress to rest of team."
-              - "Charged with interviewing potential job prospects based on strict criteria of technical skills, ability to fit culture, and on understanding Agile processes."
-              - "Created topology graph prototype (using d3.js) that was well received during demos at VMWare's VMWorld 2015. "
-              - "Helped support team implement cheaper and faster process to get customer logs, reducing monthly costs by 75%, and saving many hours of having to manually delete files."
+              - "Helped support team implement cheaper and faster process to get customer logs, reducing monthly costs by 75%."
 
 
         - org: "Accenture Software (Duck Creek Tech)"
