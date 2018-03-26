@@ -13,6 +13,9 @@ header:
     email: "travis@beeryardtech.com"
     mailto: "mailto:tgoldie+resume@gmail.com"
     phone: "Mobile: (803) 269-8690"
+###
+# END
+###
 
 work:
     display: Work History
@@ -54,6 +57,15 @@ work:
               - "Coded interactive applications using PHP and JavaScript"
               - "Structured MySQL database for data storage and security"
 
+
+patents:
+    display: Patents
+    id: patents
+    items:
+        - name: "Interface for orchestration and analysis of a computer environment"
+          when: "March 6, 2018"
+          number: "Patent 9,910,707"
+          abstract: "A host server is configured to receive information related to metrics and configurations associated with computer resources of a computer infrastructure, derive and resolve the information into capacity, performance, reliability, and efficiency, as related to attributes associated with the computer resources, including compute attributes such as application, virtual machine (VM) attributes, storage attributes, and network attributes."
 
 
 education:
